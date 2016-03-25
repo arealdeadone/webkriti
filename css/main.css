@@ -176,3 +176,9 @@ body{
 {
     opacity: 1;
 }
+
+#specialText
+{
+    font-family: "Mathlete";
+    font-size: 40px;
+}

@@ -7,3 +7,13 @@
     font-family: Gudea;
     src: url('../fonts/Gudea-Regular.ttf');
 }
+
+@font-face{
+    font-family: Mathlete;
+    src: url('../fonts/Mathlete-Bulky.otf');
+}
+
+@font-face {
+    font-family: Maven Pro;
+    src: url('../fonts/MavenPro-Black.ttf');
+}
