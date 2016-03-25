@@ -66,40 +66,40 @@
                             <h2>The Annual Website Designing Competition</h2>
                             <h4 style="border-bottom: 1px solid #000; padding-bottom: 20px;">In Association with: A.A.S.F.</h4>
                             <div class="row">
-                                <div class="col-xs-6">
+                                <div class="col-sm-6" style="border-right: 1px solid #000;">
                                     <div class="tile blue half" id="loginTile" style="margin-bottom: 10px; border: 1.8px solid #ffffff;">
                                         <div class="container" style="color: #fff">
                                             <h3>Login Here</h3><hr/>
                                             <form>
                                                 <div class="form-group row">
-                                                    <div class="col-xs-3">
+                                                    <div class="col-sm-3">
                                                         <label class="control-label">Username: </label>
                                                     </div>
-                                                    <div class="col-xs-9">
+                                                    <div class="col-sm-9">
                                                         <input class="form-control" name="username" type="text" placeholder="Username" />
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <div class="col-xs-3">
+                                                    <div class="col-sm-3">
                                                         <label class="control-label">Password: </label>
                                                     </div>
-                                                    <div class="col-xs-9">
+                                                    <div class="col-sm-9">
                                                         <input class="form-control" name="password" type="password" placeholder="********" />
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-xs-3"></div>
-                                                    <div class="col-xs-9">
+                                                    <div class="col-sm-3"></div>
+                                                    <div class="col-sm-9">
                                                         <button class="btn btn-block btn-success">Log In</button>
-                                                        <a role="button" href="#" class="btn btn-link" style="color:#fff; margin-left: 65px">Not Registered?</a>
+                                                        <a role="button" href="#" class="btn btn-link hidden-sm hidden-xs" style="color:#fff; margin-left: 65px">Not Registered?</a>
                                                     </div>
                                                 </div>
                                             </form>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xs-6">
-                                    <div class="tile green half" style="opacity: 1;">
+                                <div class="col-sm-6">
+                                    <div class="tile green half hidden-xs" style="opacity: 1;">
                                         <div class="container ssh half" id="photoTile"></div>
                                     </div>
                                 </div>
@@ -121,10 +121,12 @@
             <script src="js/jquery.min.js"></script>
             <script src="js/bootstrap.min.js" ></script>
             <script src="js/vegas/vegas.min.js"></script>
+            <script src="js/jquery.nicescroll.min.js"></script>
             <script src="js/slideshow.js"></script>
         <!--/Libraries-->
         <script>
             $(document).ready(
+                    $("html").niceScroll(),
                     $('ul.nav li.dropdown').hover(function() {
                         $(this).find('.dropdown-menu').stop(true, true).fadeIn(300);
                     }, function() {
