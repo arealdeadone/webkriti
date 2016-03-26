@@ -12,6 +12,12 @@
     color: #fff;
 }
 
+nav, .brand-logo
+{
+    font-size: 18px;
+    padding: 10px;
+}
+
 .master-tile
 {
     min-height: 500px;
