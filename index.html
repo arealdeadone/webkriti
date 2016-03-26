@@ -3,7 +3,6 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Page-Exit" content="revealTrans(Duration=6.0,Transition=12)">
         <link rel="stylesheet" href="css/fonts.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/vegas/vegas.min.css">
@@ -31,25 +30,10 @@
                         <li class="active"><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
                         <li><a href="events.html">Events</a></li>
                         <li><a href="#">About</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login</a>
-                            <ul class="dropdown-menu" style="background-color: #080808; border-radius: 0px 0px 10px 10px;">
-                                <li>
-                                    <form class="navbar-form">
-                                        <div class="form-group" style="margin-left: 10px">
-                                            <input type="text" class="form-control" id="username" placeholder="username">
-                                        </div>
-                                        <div class="form-group" style="margin: 10px;">
-                                            <input type="password" class="form-control" id="password" placeholder="********">
-                                        </div>
-                                        <a role="button" href="#" class="btn btn-link" style="margin-left: 10px">Not Registered?</a>
-                                        <button type="submit" class="btn btn-default" style="margin-left: 10px">Login</button>
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
+                        <li><a href="#">Sponsors</a></li>
+                        <li><a href="#">The Team</a></li>
                         <li>
-                            <a href="#"><strong><b>REGISTER</b></strong></a>
+                            <a href="#" data-toggle="modal" data-target="#register" data-dismiss="modal"><strong><b>REGISTER</b></strong></a>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +76,7 @@
                                                     <div class="col-sm-3"></div>
                                                     <div class="col-sm-9">
                                                         <button class="btn btn-block btn-success">Log In</button>
-                                                        <a role="button" href="#" class="btn btn-link hidden-sm hidden-xs" style="color:#fff; margin-left: 65px">Not Registered?</a>
+                                                        <a role="button" href="#" class="btn btn-link hidden-sm hidden-xs" data-toggle="modal" data-target="#register" data-dismiss="modal" style="color:#fff; margin-left: 65px">Not Registered?</a>
                                                     </div>
                                                 </div>
                                             </form>
@@ -110,6 +94,66 @@
                 </div>
                 <div class="col-xs-2"></div>
              </div>
+        </div>
+
+        <div id="register" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width: 60%">
+                <div class="modal-content">
+                    <div class="modal-header text-center">
+                        <h2 style="font-family: Mathlete; font-size: 40px; display: inline;">REGISTER HERE</h2>
+                        <span data-dismiss="modal" style="padding-top: 10px; cursor: pointer;" class="glyphicon glyphicon-remove pull-right"></span>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Name: </label> </div>
+                                    <div class="col-sm-9"><input type="text" class="form-control" id="name" name="name"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Username:</label></div>
+                                    <div class="col-sm-9"><input type="text" class="form-control" id="username_reg" name="username_reg"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Password: </label></div>
+                                    <div class="col-sm-9"><input type="password" class="form-control" id="password_reg" name="password_reg"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Email:</label></div>
+                                    <div class="col-sm-9"><input type="email" class="form-control" id="email" name="email"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Contact No: </label></div>
+                                    <div class="col-sm-9"><input type="number" class="form-control" id="contact" name="contact"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"><label class="control-label">Institute/College/School Name:</label></div>
+                                    <div class="col-sm-9"><input type="text" class="form-control" id="institute" name="institute"></div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-sm-3"></div>
+                                    <div class="col-sm-9"><button class="btn btn-primary btn-block btn-md"><b>REGISTER</b></button></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-danger pull-right" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!--<footer class="footer">-->

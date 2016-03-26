@@ -214,3 +214,31 @@
 ::-webkit-scrollbar-thumb:hover {
     background-color: #aaa;
 }
+
+.modal-body, .modal-header, .modal-footer
+{
+    color: #ffffff;
+    background-color: #080808;
+}
+
+.modal-content
+{
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+}
+
+.modal-header
+{
+    border-radius: 15px 15px 0 0;
+}
+
+.modal-footer
+{
+    border-radius: 0 0 15px 15px;
+}
+
+.modal-body label
+{
+    font-family: Rancho;
+    font-size: 22px;
+}
