@@ -171,6 +171,11 @@
 
 }
 
+.ssh
+{
+    border-bottom: 1.8px solid #fff;
+}
+
 #loginTile:hover{
     transition: 1s;
     opacity: 1;
